@@ -1,200 +1,234 @@
-# Network Troubleshooting and Configuration Using Command-Line Tools
+# Network Troubleshooting
 
-This project involves studying and applying basic network troubleshooting and configuration commands to diagnose network issues and gather network configuration details. The following tools are extensively used in this project:
+## Objective
+This document provides a detailed study of basic network troubleshooting and configuration commands, including the usage and output of the following commands:
 
-1. **ping**
-2. **ipconfig**
-3. **tracert (traceroute)**
-4. **nslookup**
-5. **netstat**
-6. **hostname**
-7. **route print**
+- `ping`
+- `ipconfig`
+- `tracert`
+- `nslookup`
+- `netstat`
+- `hostname`
+- `routeprint`
 
-## Commands Overview
-
-### 1. `ping`
-
-The `ping` command is used to test the reachability of a host on an Internet Protocol (IP) network. It also measures the round-trip time for messages sent from the originating host to a destination computer.
-
-**Usage:**
-
-```bash
-ping [hostname or IP address]
-```
-
-**Example:**
-
-```bash
-ping google.com
-ping 192.168.1.1
-```
-
-This will send ICMP Echo Request packets to the target and wait for a reply, indicating whether the destination is reachable.
-
-### 2. `ipconfig`
-
-The `ipconfig` command provides details about the current network configuration of the computer, including the IP address, subnet mask, and default gateway.
-
-**Usage:**
-
-```bash
-ipconfig
-```
-
-To view detailed information, use:
-
-```bash
-ipconfig /all
-```
-
-**Example:**
-
-```bash
-ipconfig
-```
-
-This will display the IP configuration for all network adapters on your system.
-
-### 3. `tracert` (Traceroute)
-
-The `tracert` (on Windows) or `traceroute` (on Unix-like systems) command is used to trace the route that packets take from your computer to a destination host, showing each hop along the way.
-
-**Usage:**
-
-```bash
-tracert [hostname or IP address]
-```
-
-**Example:**
-
-```bash
-tracert google.com
-```
-
-This will display each network hop along the route from your machine to `google.com`.
-
-### 4. `nslookup`
-
-The `nslookup` command is used to query DNS (Domain Name System) to obtain domain name or IP address mapping information.
-
-**Usage:**
-
-```bash
-nslookup [hostname]
-```
-
-**Example:**
-
-```bash
-nslookup google.com
-```
-
-This will query DNS servers to find the IP address of `google.com`.
-
-### 5. `netstat`
-
-The `netstat` command displays active network connections, routing tables, and network interface statistics. It is useful for diagnosing networking issues and monitoring network traffic.
-
-**Usage:**
-
-```bash
-netstat
-```
-
-To display active connections with detailed information, use:
-
-```bash
-netstat -an
-```
-
-**Example:**
-
-```bash
-netstat
-```
-
-This will show a list of all active connections and listening ports on your computer.
-
-### 6. `hostname`
-
-The `hostname` command displays the current hostname of the computer or sets a new hostname for the machine.
-
-**Usage:**
-
-```bash
-hostname
-```
-
-To change the hostname (requires admin privileges):
-
-```bash
-hostname [new hostname]
-```
-
-**Example:**
-
-```bash
-hostname
-```
-
-This will return the current system hostname.
-
-### 7. `route print`
-
-The `route print` command displays the routing table for the current system, showing how packets are routed on the network.
-
-**Usage:**
-
-```bash
-route print
-```
-
-**Example:**
-
-```bash
-route print
-```
-
-This will show the system's routing table, including routes, network masks, and gateways.
+## Table of Contents
+1. [Ping Command](#ping-command)
+2. [Ipconfig Command](#ipconfig-command)
+3. [Tracert Command](#tracert-command)
+4. [Nslookup Command](#nslookup-command)
+5. [Netstat Command](#netstat-command)
+6. [Hostname Command](#hostname-command)
+7. [Routeprint Command](#routeprint-command)
 
 ---
 
-## Practical Use Cases
+## 1. Ping Command
 
-### Example 1: Diagnosing Network Connectivity Issues
+The `ping` command is used to test the network connectivity between the host and another device on a network. It works by sending ICMP Echo Request messages and waiting for Echo Replies.
 
-1. Use `ping` to check if the destination host is reachable:
-   ```bash
-   ping google.com
-   ```
+### Basic Syntax:
+```bash
+ping <hostname_or_ip>
+```
 
-2. If the ping fails, use `tracert` to trace the path to the destination:
-   ```bash
-   tracert google.com
-   ```
+### Examples:
+- **ping -t**: Sends ping requests continuously until interrupted.
+  ```bash
+  ping -t 8.8.8.8
+  ```
+  Output:
+  ```
+  Pinging 8.8.8.8 with 32 bytes of data:
+  Reply from 8.8.8.8: bytes=32 time=28ms TTL=56
+  Reply from 8.8.8.8: bytes=32 time=29ms TTL=56
+  (continues...)
+  ```
 
-3. Check your system's IP configuration using `ipconfig`:
-   ```bash
-   ipconfig
-   ```
+- **ping -n <count>**: Sends a specific number of ping requests.
+  ```bash
+  ping -n 5 8.8.8.8
+  ```
+  Output:
+  ```
+  Pinging 8.8.8.8 with 32 bytes of data:
+  Reply from 8.8.8.8: bytes=32 time=28ms TTL=56
+  Reply from 8.8.8.8: bytes=32 time=29ms TTL=56
+  (continues...)
+  ```
 
-4. If you suspect DNS issues, use `nslookup` to verify DNS resolution:
-   ```bash
-   nslookup google.com
-   ```
+### Special IP Addresses:
+- **0.0.0.0**: Represents an invalid or unspecified address. It typically means that no specific IP address has been assigned to a device.
+  
+- **127.0.0.1**: The loopback address. Used to test the internal network stack of a device (also called localhost).
 
-5. Use `netstat` to check for any active connections or listening ports:
-   ```bash
-   netstat
-   ```
+- **225.225.225.225**: A multicast address. It is used to send data to multiple devices in a specific multicast group.
 
-6. Review the system's routing table using `route print` to check if there are any incorrect routes:
-   ```bash
-   route print
-   ```
+- **172.16.73.10**: A private IP address within the subnet range `172.16.0.0` to `172.31.255.255`.
+
+---
+
+## 2. Ipconfig Command
+
+The `ipconfig` command displays all current TCP/IP network configurations.
+
+### Basic Syntax:
+```bash
+ipconfig
+```
+
+### Examples:
+- **ipconfig /all**: Shows detailed information about all network interfaces (IP addresses, DNS, MAC address, etc.)
+  ```bash
+  ipconfig /all
+  ```
+  Output:
+  ```
+  Windows IP Configuration
+  Host Name . . . . . . . . . . . . : DESKTOP-XYZ
+  Primary Dns Suffix  . . . . . . . : example.com
+  Ethernet adapter Ethernet:
+      Connection-specific DNS Suffix  . : 
+      IPv4 Address. . . . . . . . . . : 192.168.1.2
+      Subnet Mask . . . . . . . . . . : 255.255.255.0
+      Default Gateway . . . . . . . . : 192.168.1.1
+  ```
+
+- **ipconfig /?**: Displays the help information for `ipconfig`.
+  ```bash
+  ipconfig /?
+  ```
+  Output:
+  ```
+  Displays all current TCP/IP network configuration values and refreshes DHCP and DNS settings.
+  ```
+
+---
+
+## 3. Tracert Command
+
+The `tracert` (Traceroute) command is used to trace the path that packets take to reach a destination host.
+
+### Basic Syntax:
+```bash
+tracert <hostname_or_ip>
+```
+
+### Example:
+- **tracert -h <max_hops>**: Specifies the maximum number of hops to trace.
+  ```bash
+  tracert -h 10 8.8.8.8
+  ```
+  Output:
+  ```
+  Tracing route to 8.8.8.8 over a maximum of 10 hops:
+  1    <1 ms    <1 ms    <1 ms  192.168.1.1
+  2    15 ms    14 ms    14 ms  10.0.0.1
+  3    28 ms    29 ms    28 ms  8.8.8.8
+  ```
+
+---
+
+## 4. Nslookup Command
+
+The `nslookup` command is used to query DNS (Domain Name System) servers for information about domain names or IP addresses.
+
+### Basic Syntax:
+```bash
+nslookup <domain_name>
+```
+
+### Example:
+```bash
+nslookup example.com
+```
+Output:
+```
+Server:  UnKnown
+Address:  192.168.1.1
+
+Non-authoritative answer:
+Name:    example.com
+Addresses:  93.184.216.34
+```
+
+---
+
+## 5. Netstat Command
+
+The `netstat` command provides information about network connections, routing tables, and network interface statistics.
+
+### Basic Syntax:
+```bash
+netstat
+```
+
+### Example:
+- **netstat -r**: Displays the routing table.
+  ```bash
+  netstat -r
+  ```
+  Output:
+  ```
+  IPv4 Route Table
+  ===========================================================================
+  Active Routes:
+  Network Destination        Netmask          Gateway       Interface  Metric
+  0.0.0.0                   0.0.0.0          192.168.1.1   192.168.1.2    25
+  192.168.1.0               255.255.255.0    On-link        192.168.1.2    25
+  ```
+
+---
+
+## 6. Hostname Command
+
+The `hostname` command is used to display or set the system's hostname.
+
+### Basic Syntax:
+```bash
+hostname
+```
+
+### Example:
+```bash
+hostname
+```
+Output:
+```
+DESKTOP-XYZ
+```
+
+---
+
+## 7. Routeprint Command
+
+The `routeprint` command displays the routing table on Windows.
+
+### Basic Syntax:
+```bash
+route print
+```
+
+### Example:
+```bash
+route print
+```
+Output:
+```
+===========================================================================
+Interface List
+  14...00 15 5d 94 67 f1 ......Microsoft Wi-Fi Direct Virtual Adapter #2
+  15...00 15 5d 94 67 f2 ......Intel(R) Dual Band Wireless-AC 3165
+===========================================================================
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+0.0.0.0                   0.0.0.0          192.168.1.1   192.168.1.2    25
+192.168.1.0               255.255.255.0    On-link        192.168.1.2    25
+```
 
 ---
 
 ## Conclusion
 
-These commands are fundamental for troubleshooting and configuring network settings on both local and remote systems. By using these tools, network administrators and support teams can diagnose connectivity issues, verify configurations, and resolve potential problems effectively.
+This guide covers the basic network troubleshooting commands used to diagnose and resolve issues in network connectivity and routing. Mastery of these tools will allow you to effectively monitor and troubleshoot networks.
