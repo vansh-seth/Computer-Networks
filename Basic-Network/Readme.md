@@ -30,6 +30,9 @@ The `ping` command is used to test the network connectivity between the host and
 ```bash
 ping <hostname_or_ip>
 ```
+### Output:
+
+![image](https://github.com/user-attachments/assets/c20b319a-a4e9-4a4b-adec-97312c3d9c2c)
 
 ### Examples:
 - **ping -t**: Sends ping requests continuously until interrupted.
@@ -37,25 +40,16 @@ ping <hostname_or_ip>
   ping -t 8.8.8.8
   ```
   Output:
-  ```
-  Pinging 8.8.8.8 with 32 bytes of data:
-  Reply from 8.8.8.8: bytes=32 time=28ms TTL=56
-  Reply from 8.8.8.8: bytes=32 time=29ms TTL=56
-  (continues...)
-  ```
+  
+  ![image](https://github.com/user-attachments/assets/f5a548c8-b3a6-4ece-bf10-56f98f612ead)
 
 - **ping -n <count>**: Sends a specific number of ping requests.
   ```bash
   ping -n 5 8.8.8.8
   ```
   Output:
-  ```
-  Pinging 8.8.8.8 with 32 bytes of data:
-  Reply from 8.8.8.8: bytes=32 time=28ms TTL=56
-  Reply from 8.8.8.8: bytes=32 time=29ms TTL=56
-  (continues...)
-  ```
-
+  
+  
 ### Special IP Addresses:
 - **0.0.0.0**: Represents an invalid or unspecified address. It typically means that no specific IP address has been assigned to a device.
   
@@ -75,6 +69,9 @@ The `ipconfig` command displays all current TCP/IP network configurations.
 ```bash
 ipconfig
 ```
+### Output:
+
+![image](https://github.com/user-attachments/assets/1fad64b3-c8de-43f1-8d84-b20317397eb6)
 
 ### Examples:
 - **ipconfig /all**: Shows detailed information about all network interfaces (IP addresses, DNS, MAC address, etc.)
@@ -98,9 +95,9 @@ ipconfig
   ipconfig /?
   ```
   Output:
-  ```
-  Displays all current TCP/IP network configuration values and refreshes DHCP and DNS settings.
-  ```
+
+  ![image](https://github.com/user-attachments/assets/1e0c0d05-76bd-47bd-9643-0791a2591f1f)
+
 
 ---
 
@@ -112,6 +109,9 @@ The `tracert` (Traceroute) command is used to trace the path that packets take t
 ```bash
 tracert <hostname_or_ip>
 ```
+### Output:
+
+![image](https://github.com/user-attachments/assets/8993cd0a-5387-41f5-88cb-5a7f263c99fe)
 
 ### Example:
 - **tracert -h <max_hops>**: Specifies the maximum number of hops to trace.
@@ -119,12 +119,8 @@ tracert <hostname_or_ip>
   tracert -h 10 8.8.8.8
   ```
   Output:
-  ```
-  Tracing route to 8.8.8.8 over a maximum of 10 hops:
-  1    <1 ms    <1 ms    <1 ms  192.168.1.1
-  2    15 ms    14 ms    14 ms  10.0.0.1
-  3    28 ms    29 ms    28 ms  8.8.8.8
-  ```
+  
+ ![image](https://github.com/user-attachments/assets/d4eac463-4ffe-4515-9253-2dd9be1faa69)
 
 ---
 
@@ -142,14 +138,8 @@ nslookup <domain_name>
 nslookup example.com
 ```
 Output:
-```
-Server:  UnKnown
-Address:  192.168.1.1
 
-Non-authoritative answer:
-Name:    example.com
-Addresses:  93.184.216.34
-```
+![image](https://github.com/user-attachments/assets/35a9e14e-fd2d-4228-9762-fd1af2fd84ae)
 
 ---
 
@@ -161,6 +151,9 @@ The `netstat` command provides information about network connections, routing ta
 ```bash
 netstat
 ```
+### Output: 
+
+![image](https://github.com/user-attachments/assets/9b9e1a06-c3f3-47b9-8149-9777e494702c)
 
 ### Example:
 - **netstat -r**: Displays the routing table.
@@ -168,14 +161,8 @@ netstat
   netstat -r
   ```
   Output:
-  ```
-  IPv4 Route Table
-  ===========================================================================
-  Active Routes:
-  Network Destination        Netmask          Gateway       Interface  Metric
-  0.0.0.0                   0.0.0.0          192.168.1.1   192.168.1.2    25
-  192.168.1.0               255.255.255.0    On-link        192.168.1.2    25
-  ```
+  
+  ![image](https://github.com/user-attachments/assets/6c8b0ca8-09f2-4257-b1ce-c976e7f1d3b1)
 
 ---
 
@@ -193,9 +180,8 @@ hostname
 hostname
 ```
 Output:
-```
-DESKTOP-XYZ
-```
+
+![image](https://github.com/user-attachments/assets/8ddf70a0-c027-424d-8be1-6bb1701ed1c4)
 
 ---
 
@@ -213,19 +199,8 @@ route print
 route print
 ```
 Output:
-```
-===========================================================================
-Interface List
-  14...00 15 5d 94 67 f1 ......Microsoft Wi-Fi Direct Virtual Adapter #2
-  15...00 15 5d 94 67 f2 ......Intel(R) Dual Band Wireless-AC 3165
-===========================================================================
-IPv4 Route Table
-===========================================================================
-Active Routes:
-Network Destination        Netmask          Gateway       Interface  Metric
-0.0.0.0                   0.0.0.0          192.168.1.1   192.168.1.2    25
-192.168.1.0               255.255.255.0    On-link        192.168.1.2    25
-```
+
+![image](https://github.com/user-attachments/assets/a8293349-b3af-47f1-9ba8-8c6034796543)
 
 ---
 
