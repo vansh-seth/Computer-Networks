@@ -88,12 +88,6 @@ Devices that are part of the network's endpoints. Examples:
 
      ![image](https://github.com/user-attachments/assets/a3d6022f-01b4-446e-a8a1-cbd0cd8708dc)
 
-
-Screenshots:
-- Logical view of the network topology.
-- Physical view showing device arrangement.
-- Simulation showing successful packet delivery.
-
 ---
 
 ## Conclusion
