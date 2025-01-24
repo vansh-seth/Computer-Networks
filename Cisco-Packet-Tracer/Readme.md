@@ -73,13 +73,21 @@ Devices that are part of the network's endpoints. Examples:
 2. Send messages using the "Message" feature.
 3. Switch to **Simulation Mode** to observe packet flow.
 
+![image](https://github.com/user-attachments/assets/7cb51aa5-94c3-4332-9a39-b4b4c8a5f66e)
+
 ---
 
 ## Output
 1. **Switch Communication**:
    - Packets successfully transmitted between devices connected via a switch.
+  
+     ![image](https://github.com/user-attachments/assets/c0b0aa76-69d7-4854-b949-e0b0cfb5c6a7)
+     
 2. **Hub Communication**:
    - Data broadcasted to all devices, demonstrating inefficiency compared to a switch.
+
+     ![image](https://github.com/user-attachments/assets/a3d6022f-01b4-446e-a8a1-cbd0cd8708dc)
+
 
 Screenshots:
 - Logical view of the network topology.
@@ -93,9 +101,3 @@ This lab demonstrated the configuration and functionality of different networkin
 1. Understanding the difference between switches and hubs.
 2. Observing the flow of data in logical and physical views.
 3. Using Packet Tracer tools like simulation and labeling to analyze networks.
-
-By completing this lab, students gain foundational knowledge in networking, essential for real-world network setup and troubleshooting.
-
----
-
-Let me know if you’d like to expand on any section!
