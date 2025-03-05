@@ -8,7 +8,6 @@ The provided code implements a **graph** data structure using **adjacency lists*
   - `vertex`: The destination vertex of the edge.
   - `weight`: The weight of the edge.
   - `next`: A pointer to the next node in the adjacency list.
-
 The program allows the user to:
 - Define the number of nodes.
 - Choose if the graph is directed or undirected.
