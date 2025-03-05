@@ -14,7 +14,6 @@ The program allows the user to:
 - Choose if the graph has weighted or unweighted edges.
 - Add edges between nodes (with their respective weights, if applicable).
 After setting up the graph, the program displays the adjacency list for each vertex.
-
 ## Steps
 
 1. **Input:**
