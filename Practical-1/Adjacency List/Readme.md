@@ -1,5 +1,4 @@
 # Graph Implementation in C: Readme
-
 ## Theory
 
 The provided code implements a **graph** data structure using **adjacency lists** in C. The graph can be either **directed** or **undirected** and can also have **weighted** or **unweighted** edges. In this implementation:
