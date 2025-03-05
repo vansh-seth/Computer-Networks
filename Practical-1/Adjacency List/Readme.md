@@ -1,7 +1,6 @@
 # Graph Implementation in C: Readme
 ## Theory
 The provided code implements a **graph** data structure using **adjacency lists** in C. The graph can be either **directed** or **undirected** and can also have **weighted** or **unweighted** edges. In this implementation:
-
 - A **graph** is represented by a structure (`struct Graph`), which contains:
   - `ver`: The number of vertices (nodes) in the graph.
   - `adjLists`: An array of pointers, each pointing to a linked list of edges (adjacency list).
