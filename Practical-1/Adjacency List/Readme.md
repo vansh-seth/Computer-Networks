@@ -4,7 +4,6 @@ The provided code implements a **graph** data structure using **adjacency lists*
 - A **graph** is represented by a structure (`struct Graph`), which contains:
   - `ver`: The number of vertices (nodes) in the graph.
   - `adjLists`: An array of pointers, each pointing to a linked list of edges (adjacency list).
-
 - An **edge** is represented by a structure (`struct node`), which contains:
   - `vertex`: The destination vertex of the edge.
   - `weight`: The weight of the edge.
