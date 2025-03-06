@@ -1,7 +1,6 @@
 # Transmission Media 
 ## Overview  
 This document summarizes the key concepts from the article on **Transmission Media and its Types** by PyNet Labs. Transmission media refer to the physical pathways that connect devices and enable data communication. These media can be broadly categorized into guided and unguided types, each with distinct characteristics and applications.  
-
 ---
 
 ## Types of Transmission Media  
