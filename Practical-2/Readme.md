@@ -16,7 +16,6 @@
      - **Radio Waves**: Used in broadcasting, mobile phones, and wireless networks.  
      - **Microwaves**: Suitable for long-distance communication via satellite links.  
      - **Infrared**: Utilized in remote controls and short-range communication.  
-
 ---
 
 ## Factors to Consider When Choosing Transmission Media  
