@@ -8,7 +8,6 @@ The objective of this study is to understand the functionality and usage of diff
 2. Design a network incorporating these devices.
 3. Simulate the network using **Cisco Packet Tracer**.
 ## Networking Devices Overview
-
 ### 1. Repeater
 - A **Repeater** is a network device used to **regenerate and amplify signals** to extend the transmission distance.
 - Operates at **Layer 1 (Physical Layer)** of the OSI Model.
