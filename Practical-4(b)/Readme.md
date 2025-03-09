@@ -7,7 +7,6 @@ The objective of this study is to understand the functionality and usage of diff
    - **Router**
 2. Design a network incorporating these devices.
 3. Simulate the network using **Cisco Packet Tracer**.
-
 ## Networking Devices Overview
 
 ### 1. Repeater
