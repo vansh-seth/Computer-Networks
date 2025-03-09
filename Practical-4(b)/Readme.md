@@ -17,7 +17,6 @@ The objective of this study is to understand the functionality and usage of diff
 - Operates at **Layer 3 (Network Layer)** of the OSI Model.
 - Uses **IP addresses** to determine the best path for forwarding packets.
 - Enables communication between **different subnets and networks**.
-
 ## Network Design
 The network topology will consist of:
 - **Two separate LANs** connected via a router.
