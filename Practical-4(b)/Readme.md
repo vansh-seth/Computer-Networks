@@ -23,7 +23,6 @@ The network topology will consist of:
 - **A repeater** used to extend the signal within a LAN.
 - **End devices (PCs, laptops, or servers)** connected to each network.
 - **Switches** used to connect multiple devices within a LAN.
-
 ## Simulation in Cisco Packet Tracer
 1. **Launch Cisco Packet Tracer**.
 2. **Add the required devices**:
