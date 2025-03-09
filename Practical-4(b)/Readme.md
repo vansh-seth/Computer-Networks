@@ -12,7 +12,6 @@ The objective of this study is to understand the functionality and usage of diff
 - A **Repeater** is a network device used to **regenerate and amplify signals** to extend the transmission distance.
 - Operates at **Layer 1 (Physical Layer)** of the OSI Model.
 - Used to eliminate signal attenuation over long distances.
-
 ### 2. Router
 - A **Router** is an inter-networking device that **forwards data packets** between computer networks.
 - Operates at **Layer 3 (Network Layer)** of the OSI Model.
