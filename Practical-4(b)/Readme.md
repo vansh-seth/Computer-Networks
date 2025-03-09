@@ -1,7 +1,6 @@
 # Study of Various Networking and Inter-Networking Devices
 ## Objective
 The objective of this study is to understand the functionality and usage of different networking and inter-networking devices, particularly **Repeaters** and **Routers**. The study includes designing a network using these devices and simulating it using **Cisco Packet Tracer**.
-
 ## Task to be Performed
 1. Study the following networking and inter-networking devices:
    - **Repeater**
