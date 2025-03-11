@@ -6,7 +6,6 @@ The objective of this project is to study and simulate different network topolog
 - Bus
 - Ring
 - Hybrid
-
 ## Task to be Performed
 1. **Study the Different Network Topologies:**
    - Understand the structure, advantages, and disadvantages of each topology.
