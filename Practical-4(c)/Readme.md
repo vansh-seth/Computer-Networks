@@ -10,7 +10,6 @@ The objective of this project is to study and simulate different network topolog
 1. **Study the Different Network Topologies:**
    - Understand the structure, advantages, and disadvantages of each topology.
    - Learn about their real-world applications and use cases.
-
 2. **Draw the Network Topologies in Cisco Packet Tracer:**
    - Use appropriate networking devices such as hubs, switches, routers, and PCs.
    - Connect the devices according to each topology's structure.
