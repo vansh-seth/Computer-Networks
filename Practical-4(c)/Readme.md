@@ -34,7 +34,6 @@ The objective of this project is to study and simulate different network topolog
 - Devices are connected in a circular manner.
 - Data flows in one or both directions with minimal packet collision.
 - Failure in one node can disrupt the entire network unless a dual-ring setup is used.
-
 ### 5. Hybrid Topology
 - Combination of two or more topologies.
 - Flexible and scalable but can be complex to design and maintain.
