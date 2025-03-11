@@ -17,7 +17,6 @@ The objective of this project is to study and simulate different network topolog
    - Configure IP addresses and connectivity settings.
    - Use the simulation mode in Cisco Packet Tracer to observe data packet flow.
    - Identify possible network issues and improvements.
-
 ## Network Topologies Overview
 ### 1. Star Topology (Using Hub and Switch)
 - Centralized network where all nodes are connected to a central device (Hub or Switch).
