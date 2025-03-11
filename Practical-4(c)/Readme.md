@@ -37,7 +37,6 @@ The objective of this project is to study and simulate different network topolog
 ### 5. Hybrid Topology
 - Combination of two or more topologies.
 - Flexible and scalable but can be complex to design and maintain.
-
 ## Requirements
 - Cisco Packet Tracer (latest version recommended)
 - Basic understanding of networking concepts
