@@ -1,5 +1,4 @@
 # Study and Simulation of Different Network Topologies using Cisco Packet Tracer
-
 ## Objective
 The objective of this project is to study and simulate different network topologies using Cisco Packet Tracer. The topologies covered include:
 - Star (using Hub and Switch)
