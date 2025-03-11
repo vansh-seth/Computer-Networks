@@ -41,7 +41,6 @@ The objective of this project is to study and simulate different network topolog
 - Cisco Packet Tracer (latest version recommended)
 - Basic understanding of networking concepts
 - Computers or virtual machines for simulation
-
 ## Steps to Run the Simulation
 1. Open Cisco Packet Tracer.
 2. Create a new project and select the required networking devices.
