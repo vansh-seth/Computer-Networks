@@ -16,7 +16,6 @@ This document provides a detailed study of basic network troubleshooting and con
 5. [Netstat Command](#netstat-command)
 6. [Hostname Command](#hostname-command)
 7. [Routeprint Command](#routeprint-command)
-
 ---
 
 ## 1. Ping Command
