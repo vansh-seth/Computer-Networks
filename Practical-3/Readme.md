@@ -8,7 +8,6 @@ This document provides a detailed study of basic network troubleshooting and con
 - `netstat`
 - `hostname`
 - `routeprint`
-
 ## Table of Contents
 1. [Ping Command](#ping-command)
 2. [Ipconfig Command](#ipconfig-command)
