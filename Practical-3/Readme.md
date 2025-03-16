@@ -1,5 +1,4 @@
 # Network Troubleshooting
-
 ## Objective
 This document provides a detailed study of basic network troubleshooting and configuration commands, including the usage and output of the following commands:
 
