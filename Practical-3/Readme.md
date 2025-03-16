@@ -19,7 +19,6 @@ This document provides a detailed study of basic network troubleshooting and con
 ---
 ## 1. Ping Command
 The `ping` command is used to test the network connectivity between the host and another device on a network. It works by sending ICMP Echo Request messages and waiting for Echo Replies.
-
 ### Basic Syntax:
 ```bash
 ping <hostname_or_ip>
