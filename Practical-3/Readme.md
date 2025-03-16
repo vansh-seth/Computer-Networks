@@ -17,7 +17,6 @@ This document provides a detailed study of basic network troubleshooting and con
 6. [Hostname Command](#hostname-command)
 7. [Routeprint Command](#routeprint-command)
 ---
-
 ## 1. Ping Command
 
 The `ping` command is used to test the network connectivity between the host and another device on a network. It works by sending ICMP Echo Request messages and waiting for Echo Replies.
