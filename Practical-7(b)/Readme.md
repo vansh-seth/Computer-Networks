@@ -61,8 +61,3 @@ Error detected at bit position: 3
 Corrected Hamming code: 1 0 1 0 1 1 1 
 ```
 
-## Author
-- Developed by [Your Name]
-
-## License
-This project is open-source and available for educational purposes.
