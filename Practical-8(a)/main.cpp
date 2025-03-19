@@ -64,6 +64,18 @@ Input:
 Enter sent message (binary): 110101
 Enter received message (binary): 110101
 Enter block size: 3
+
 Output:
 No Error
 */
+
+/*
+Input:
+Enter sent message (binary): 110101
+Enter received message (binary): 110001
+Enter block size: 3
+
+Output:
+Error
+*/
+
