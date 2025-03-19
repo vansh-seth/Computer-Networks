@@ -1,4 +1,4 @@
-# Checksum Error Detection in C++
+# Checksum Error Detection
 
 ## Overview
 This C++ program implements a checksum error detection mechanism for binary data transmission. It allows the user to input a sent binary message, a received binary message, and a block size. The program then determines whether an error has occurred during transmission using the checksum method.
@@ -14,6 +14,44 @@ Checksum is a method used to detect errors in transmitted data by performing bin
    - The sender transmits the original data.
    - The receiver appends the sender's checksum to the received data and performs the checksum computation again.
    - If the final checksum result is all 0s, there is no error; otherwise, an error is detected.
+
+## Example Calculation (Handwritten-Style)
+
+Let's take an example where:
+- **Data Sent**: `110101101011`
+- **Block Size**: `4`
+
+### Step 1: Divide the Data into Blocks
+```
+1101 0110 1011
+```
+
+### Step 2: Perform Binary Addition (Ignoring Carry Beyond Block Size)
+```
+  1101
++ 0110
+-------
+ 10011  (Overflow, carry is ignored, keeping last 4 bits -> 0011)
++ 1011
+-------
+  1110
+```
+
+### Step 3: Compute Checksum (Complement of the Sum)
+```
+  1110  (Sum Result)
+  ----
+  0001  (Checksum - Flip bits)
+```
+
+### Step 4: Send Data with Checksum
+```
+Sent Data: 110101101011
+Checksum:  0001
+```
+
+### Step 5: Receiver Side Verification
+The receiver adds received data blocks (including checksum) and checks if the final sum is all `0`s. If not, an error is detected.
 
 ## Code Explanation
 The main functions in the program are:
@@ -51,5 +89,3 @@ Enter block size: 3
 ```
 Error
 ```
-
-
