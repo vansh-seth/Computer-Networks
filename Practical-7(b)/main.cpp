@@ -13,7 +13,6 @@ int calculateRedundantBits(int m) {
 void generateHammingCode(int data[], int m, int r, int hammingCode[]) {
     int j = 0, k = 0;
     int totalBits = m + r;
-   
     for (int i = 0; i < totalBits; i++) {
         if ((i + 1) && (!(i & (i + 1)))) {
             hammingCode[i] = 0;
@@ -22,11 +21,9 @@ void generateHammingCode(int data[], int m, int r, int hammingCode[]) {
             j++;
         }
     }
-   
     for (int i = 0; i < r; i++) {
         int pos = pow(2, i);
         int parity = 0;
-       
         for (int j = pos - 1; j < totalBits; j += (2 * pos)) {
             for (int k = 0; k < pos; k++) {
                 if ((j + k) < totalBits) {
