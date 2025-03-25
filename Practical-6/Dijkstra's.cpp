@@ -34,15 +34,11 @@ void dijkstra(int nodes, int src) {
         visited[i] = false;
         parent[i] = -1;
     }
-    
     dist[src] = 0;
-    
     for (int count = 0; count < nodes - 1; count++) {
         int u = minDistance(nodes);
         if (u == -1) break;
-        
         visited[u] = true;
-        
         for (int v = 0; v < nodes; v++) {
             if (!visited[v] && graph[u][v] && dist[u] + graph[u][v] < dist[v]) {
                 dist[v] = dist[u] + graph[u][v];
@@ -50,7 +46,6 @@ void dijkstra(int nodes, int src) {
             }
         }
     }
-    
     for (int i = 0; i < nodes; i++) {
         if (i != src) {
             cout << "Path from node " << (src + 1) << " to node " << (i + 1) << ": ";
