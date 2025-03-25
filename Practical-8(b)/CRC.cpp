@@ -15,23 +15,18 @@ string xorOperation(string dividend, string divisor) {
 string computeCRC(string data, string divisor) {
     int dataLen = data.length();
     int divisorLen = divisor.length();
-    
-    // Append zeros to the data based on the divisor length
     string paddedData = data + string(divisorLen - 1, '0');
-    
     string remainder = paddedData.substr(0, divisorLen);
-    
     for (size_t i = divisorLen; i <= paddedData.length(); i++) {
         if (remainder[0] == '1') {
             remainder = xorOperation(remainder, divisor);
         }
-        remainder = remainder.substr(1); // Remove first bit
+        remainder = remainder.substr(1); 
         if (i < paddedData.length()) {
-            remainder += paddedData[i]; // Append next bit
+            remainder += paddedData[i]; 
         }
     }
-    
-    return remainder; // CRC remainder
+    return remainder; 
 }
 
 // Function to check for errors at receiver
