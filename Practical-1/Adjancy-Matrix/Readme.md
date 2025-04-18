@@ -3,7 +3,6 @@
 This program allows users to create and represent a graph in matrix form. The graph can be directed or undirected, weighted or unweighted, and is represented using an adjacency matrix. It helps visualize network connections and weights between nodes. Users can input edges and weights interactively, and the program outputs the adjacency matrix representation.  
 ---
 ## Algorithm Steps  
-
 ### 1. **Input Initialization**  
    - Prompt the user to enter the number of nodes in the graph (`n`).  
    - Ask whether the graph is directed (`y/n`) and weighted (`y/n`).  
