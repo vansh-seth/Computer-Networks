@@ -5,8 +5,7 @@ This program allows users to create and represent a graph in matrix form. The gr
 ## Algorithm Steps  
 ### 1. **Input Initialization**  
    - Prompt the user to enter the number of nodes in the graph (`n`).  
-   - Ask whether the graph is directed (`y/n`) and weighted (`y/n`).  
-
+   - Ask whether the graph is directed (`y/n`) and weighted (`y/n`).
 ### 2. **Matrix Setup**  
    - Initialize an `n x n` matrix filled with a default value (`10000`) to represent no direct connection between nodes.  
    - Set the diagonal elements to `0` because the distance from a node to itself is `0`.  
