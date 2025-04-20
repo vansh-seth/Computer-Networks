@@ -10,7 +10,6 @@ These are hardware components that help in data transmission between computers a
 - **Router**: Connects multiple networks and directs data packets.
 - **Switch**: Facilitates communication between devices in a single network.
 - **Hub**: A simpler device that broadcasts data to all devices in a network.
-
 ### 2. **End Devices**
 Devices that are part of the network's endpoints. Examples:
 - **PCs**
