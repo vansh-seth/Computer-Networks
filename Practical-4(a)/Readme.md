@@ -1,7 +1,6 @@
 # Cisco Packet Tracer - Networking and Inter-Networking Devices
 ## Overview
 This lab focuses on exploring the basics of computer networking using **Cisco Packet Tracer**, a powerful simulation tool for designing and analyzing network behavior. The objectives include learning about networking devices, creating connections, understanding the logical and physical views of networks, and sending messages between devices.
-
 ---
 
 ## Basics of Cisco Packet Tracer
