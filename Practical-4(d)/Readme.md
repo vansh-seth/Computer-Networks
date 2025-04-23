@@ -10,7 +10,6 @@ The objective of this project is to implement and understand static routing usin
 - Cisco Packet Tracer installed.
 - Basic understanding of networking concepts (IP addressing, subnetting, routing).
 - Familiarity with Cisco router CLI commands.
-
 ## Network Topology
 The network consists of three distinct networks connected via routers:
 1. **Network 1**: [IP Addressing Details]
