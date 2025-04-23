@@ -1,5 +1,4 @@
 # Static Routing using Cisco Packet Tracer
-
 ## Objective
 The objective of this project is to implement and understand static routing using Cisco Packet Tracer. The task involves creating three networks and connecting them using routers. The process of static routing will be simulated to enable packet delivery between different networks.
 
