@@ -6,7 +6,6 @@ The objective of this project is to implement and understand static routing usin
 - Create three networks and interconnect them using routers.
 - Configure static routes to ensure proper packet delivery.
 - Simulate and verify network communication.
-
 ## Prerequisites
 - Cisco Packet Tracer installed.
 - Basic understanding of networking concepts (IP addressing, subnetting, routing).
