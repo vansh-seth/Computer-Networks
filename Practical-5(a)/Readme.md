@@ -9,7 +9,6 @@ To find the minimum spanning tree (MST) of a given network using Prim's algorith
 A company in New York needs to establish reliable internet and phone connectivity between five offices (A, B, C, D, and E). The phone company charges for each link, and the costs are represented as a graph. The objective is to find the most cost-effective way to connect the offices using Prim’s algorithm.
 ## Prim’s Algorithm
 Prim’s algorithm is a greedy algorithm used to find the minimum spanning tree of a weighted undirected graph. It starts from an arbitrary node and grows the MST by adding the minimum-weight edge at each step.
-
 ### Steps:
 1. Initialize all keys as infinity and mark all nodes as not part of MST.
 2. Set the key of the starting node to 0.
