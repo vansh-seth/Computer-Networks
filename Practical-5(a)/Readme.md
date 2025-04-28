@@ -5,7 +5,6 @@ To find the minimum spanning tree (MST) of a given network using Prim's algorith
 - Study Prim’s algorithm.
 - Implement a C program to find the MST of a given network.
 - Apply the algorithm to a case study of a company connecting five offices with minimal cost.
-
 ## Case Study
 A company in New York needs to establish reliable internet and phone connectivity between five offices (A, B, C, D, and E). The phone company charges for each link, and the costs are represented as a graph. The objective is to find the most cost-effective way to connect the offices using Prim’s algorithm.
 
