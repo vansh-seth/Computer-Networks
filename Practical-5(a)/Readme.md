@@ -1,5 +1,4 @@
 # Experiment 5 (a): Finding an Optimum Path using Prim's Algorithm
-
 ## Objective
 To find the minimum spanning tree (MST) of a given network using Prim's algorithm, ensuring the total cost of leased dedicated lines is minimized.
 
