@@ -1,7 +1,6 @@
 # Experiment 5 (b): Finding an Optimum Path using Kruskal's Algorithm
 ## Objective
 To find the minimum spanning tree (MST) of a given network using Kruskal's algorithm, ensuring the total cost of leased dedicated lines is minimized.
-
 ## Task Overview
 - Study Kruskal’s algorithm.
 - Implement a C++ program to find the MST of a given network.
