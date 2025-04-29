@@ -9,7 +9,6 @@ To find the minimum spanning tree (MST) of a given network using Kruskal's algor
 A company in New York needs to establish reliable internet and phone connectivity between five offices (A, B, C, D, and E). The phone company charges for each link, and the costs are represented as a graph. The objective is to find the most cost-effective way to connect the offices using Kruskal’s algorithm.
 ## Kruskal’s Algorithm
 Kruskal’s algorithm is a greedy algorithm used to find the minimum spanning tree of a weighted undirected graph. It sorts all edges in non-decreasing order and picks the smallest edge that doesn’t form a cycle.
-
 ### Steps:
 1. Sort all edges in ascending order based on weight.
 2. Initialize each node as an individual set (using Disjoint Set Union - DSU).
